@@ -1,207 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <title>Dashboard</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
   <body>
-    <nav>
-      <div class="sidebar">
-        <div class="dashboard">
-          <img src="assets/view-dashboard-outline.svg" alt="" /> Dashboard
+    <!-- App Drawer -->
+    <div class="drawer">
+      <div class="dashboard menuItem">
+        <img src=" " alt="" />
+        <h1>Dashboard</h1>
+      </div>
+      <div class="menuItem">
+        <img src="svg_images/home-icon-silhouette-svgrepo-com.svg" alt="" />
+        <h1>Home</h1>
+      </div>
+      <div class="menuItem">
+        <img src=" " alt="" />
+        <h1>Profile</h1>
+      </div>
+      <div class="menuItem">
+        <img src="svg_images/communication-bubble-chat-comments-conversation-message-icon-svgrepo-com.svg" alt="" />
+        <h1>Messages</h1>
+      </div>
+      <div class="menuItem">
+        <img src="svg_images/history-2-svgrepo-com.svg" alt="" />
+        <h1>History</h1>
+      </div>
+      <div class="menuItem">
+        <img src="svg_images/file-arrow-up-svgrepo-com.svg" alt="" />
+        <h1>Tasks</h1>
+      </div>
+      <div class="menuItem">
+        <img src="svg_images/duotone-users-more-svgrepo-com.svg" alt="" />
+        <h1>Communities</h1>
+      </div>
+      <!-- extra spacing reuired -->
+      <div class="menuItem">
+        <img src="svg_images/settings-svgrepo-com.svg" alt="" />
+        <h1>Settings</h1>
+      </div>
+      <div class="menuItem">
+        <img src="svg_images/help-circle-svgrepo-com.svg" alt="" />
+        <h1>Support</h1>
+      </div>
+      <div class="menuItem">
+        <img src=" " alt="" />
+        <h1>Privacy</h1>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar">
+      <!-- Top Section -->
+      <div class="topNav">
+        <!-- Search icon and search bar -->
+        <div class="search">
+          <div class="menuItem">
+            <img src="svg_images/search-alt-svgrepo-com.svg" alt="" />
+          </div>
+          <input type="text" name="search" autocomplete="off" />
         </div>
-        <ul class="first">
-          <li><img src="assets/home.svg" alt="" /> Home</li>
-          <li><img src="assets/account-circle.svg" alt="" /> Profile</li>
-          <li><img src="assets/message-reply.svg" alt="" /> Messages</li>
-          <li><img src="assets/clock-time-three.svg" alt="" /> History</li>
-          <li><img src="assets/note-multiple.svg" alt="" /> Tasks</li>
-          <li><img src="assets/account-group.svg" alt="" /> Communities</li>
-        </ul>
-        <ul class="second">
-          <li><img src="assets/cog.svg" alt="" /> Settings</li>
-          <li><img src="assets/help-box.svg" alt="" /> Support</li>
-          <li><img src="assets/shield-check.svg" alt="" /> Privacy</li>
-        </ul>
-      </div>
-    </nav>
-    <header>
-      <div class="search">
-        <button class="search"><img src="assets/magnify.svg" alt="" /></button
-        ><input type="search" name="" id="" class="searchbar" />
-      </div>
-      <button class="bell">
-        <img src="/home/beryl/Downloads/bell-icon-silhouette-svgrepo-com.svg" alt="" /></button
-      ><button class="profile">
-        <img src="assets/profile-small.svg" alt="" />
-      </button>
-      <div class="user-name">Morgan Oakley</div>
-      <div class="greeting">
-        <img src="assets/profile-big.svg" alt="" />
-        <div class="text">
-          Hi there,<br />
-          Morgan Oakley (@morgan)
+        <div class="account">
+          <div class="menuIcon">
+            <img src="/svg_images/bell-icon-silhouette-svgrepo-com.svg" alt="" />
+          </div>
+          <!-- Avatar from Github -->
+          <div class="gh-avatar"></div>
+          <!-- Our username -->
+          <p class="name">Archycodes</p>
         </div>
       </div>
-      <button class="new">new</button><button class="upload">upload</button
-      ><button class="share">share</button>
-    </header>
-    <main>
-      <div class="project-container">
-        <div class="head">Your Projects</div>
-        <article>
-          <div class="project">
-            <div>
-              Super Duper Cool Project <br />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, hic
-              consequatur tenetur vero maxime neque non harum repellendus iusto
-              quos veritatis dolore iure ab ex ea exercitationem minima commodi
-              officiis?
-            </div>
-            <div>
-              <button class="project-icons">
-                <img src="assets/bookmark-outline.svg" alt="" /></button
-              ><button class="project-icons">
-                <img src="assets/eye-plus-outline.svg" alt="" /></button
-              ><button class="project-icons">
-                <img src="assets/share-variant-outline.svg" alt="" />
-              </button>
-            </div>
+
+      <!-- Bottom Section -->
+      <div class="bottom">
+        <!-- Profile details -->
+        <div class="profile">
+          <div class="gh-avatar"></div>
+          <div class="profile-name">
+            <p class="greeting">Hi there,</p>
+            <p class="name">Archybella<span class="username">(@Archybella)</span></p>
           </div>
-          <div class="project">
-            <div>
-              Cool Project <br />
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-              dolore natus hic illo, officia minus deleniti voluptas fugit
-              quisquam saepe quos recusandae itaque qui eum! Est, magni
-              distinctio? Fuga, iusto.
-            </div>
-            <div>
-              <button class="project-icons">
-                <img src="assets/bookmark-outline.svg" alt="" /></button
-              ><button class="project-icons">
-                <img src="assets/eye-plus-outline.svg" alt="" /></button
-              ><button class="project-icons">
-                <img src="assets/share-variant-outline.svg" alt="" />
-              </button>
-            </div>
-          </div>
-          <div class="project">
-            <div>
-              Super Cool Project <br />
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-              ipsa, hic porro aspernatur accusamus dolorum delectus illo amet
-              enim animi expedita eos totam vero quidem magnam voluptate
-              voluptatem velit possimus quasi. Ipsam, facilis!
-            </div>
-            <div>
-              <button class="project-icons">
-                <img src="assets/bookmark-outline.svg" alt="" /></button
-              ><button class="project-icons">
-                <img src="assets/eye-plus-outline.svg" alt="" /></button
-              ><button class="project-icons">
-                <img src="assets/share-variant-outline.svg" alt="" />
-              </button>
-            </div>
-          </div>
-          <div class="project">
-            <div>
-              Impossible App <br />
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum,
-              voluptatum exercitationem eius voluptatem quasi dolor rem velit
-              ad? Porro doloribus ipsam blanditiis neque saepe sed commodi
-              consequatur repudiandae. Quae, repellendus!
-            </div>
-            <div>
-              <button class="project-icons">
-                <img src="assets/bookmark-outline.svg" alt="" /></button
-              ><button class="project-icons">
-                <img src="assets/eye-plus-outline.svg" alt="" /></button
-              ><button class="project-icons">
-                <img src="assets/share-variant-outline.svg" alt="" />
-              </button>
-            </div>
-          </div>
-          <div class="project">
-            <div>
-              Interesting Project <br />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo autem
-              omnis ratione necessitatibus, accusamus consequatur odio cum
-              voluptatum nisi dolore similique consequuntur. Et, optio officia!
-            </div>
-            <div>
-              <button class="project-icons">
-                <img src="assets/bookmark-outline.svg" alt="" /></button
-              ><button class="project-icons">
-                <img src="assets/eye-plus-outline.svg" alt="" /></button
-              ><button class="project-icons">
-                <img src="assets/share-variant-outline.svg" alt="" />
-              </button>
-            </div>
-          </div>
-          <div class="project">
-            <div>
-              Impossible Project <br />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              molestias dolorem ut voluptas hic explicabo reprehenderit nobis
-              necessitatibus! In, nobis!
-            </div>
-            <div>
-              <button class="project-icons">
-                <img src="assets/bookmark-outline.svg" alt="" /></button
-              ><button class="project-icons">
-                <img src="assets/eye-plus-outline.svg" alt="" /></button
-              ><button class="project-icons">
-                <img src="assets/share-variant-outline.svg" alt="" />
-              </button>
-            </div>
-          </div>
-        </article>
+        </div>
+        <!-- Button section -->
+        <div class="buttons">
+          <button class="btn">New</button>
+          <button class="btn">Upload</button>
+          <button class="btn">Share</button>
+        </div>
       </div>
-      <div class="announcement">
-        <div class="head">Announcement</div>
-        <article>
-          <div class="1">
-            Site Maintenance <br />
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
-            necessitatibus nihil aut nostrum nesciunt nemo?
+    </div>
+
+    <!-- Main Content -->
+    <main class="content">
+      <div class="projects">
+        <h3>my Projects</h3>
+
+        <!-- Section for all project cards -->
+        <div class="cards">
+          <!-- Each individual card, we need 6 cards -->
+          <div class="card">
+            <h5 class="card-title">Super Cool Project</h5>
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ea
+              doloribus debitis reprehenderit? Sapiente, qui quaerat enim non.
+            </p>
+            <div class="icons">
+              <img src="/icons/star-plus-outline.svg" alt="" />
+              <img src="svg_images/view-eye-interface-symbol-svgrepo-com.svg" alt="" />
+              <img src="svg_images/share-svgrepo-com.svg" alt="" />
+            </div>
           </div>
-          <div class="2">
-            Community Share Day <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem itaque
-            magni ut cumque adipisci ipsam.
+          <!-- Each individual card, we need 6 cards -->
+          <div class="card">
+            <h5 class="card-title">Less Cool Project</h5>
+            <p class="card-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
+              officia nesciunt harum distinctio quia nisi ipsum reiciendis
+              aspernatur, sunt nam. Doloremque aliquam ut culpa harum non rem
+              in, cumque vitae!
+            </p>
+            <div class="icons">
+              <img src="/icons/star-plus-outline.svg" alt="" />
+              <img src="svg_images/view-eye-interface-symbol-svgrepo-com.svg" alt="" />
+              <img src="svg_images/share-svgrepo-com.svg" alt="" />
+            </div>
           </div>
-          <div class="3">
-            Update Privacy Policy <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero
-            explicabo illo accusantium voluptate nihil.
+          <!-- Each individual card, we need 6 cards -->
+          <div class="card">
+            <h5 class="card-title">Impossible App</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+              dicta. Pariatur libero a molestiae quod culpa deserunt quo quam
+              eos necessitatibus aliquid, nam fuga sed itaque magnam delectus ex
+              animi?
+            </p>
+            <div class="icons">
+              <img src="/icons/star-plus-outline.svg" alt="" />
+              <img src="svg_images/view-eye-interface-symbol-svgrepo-com.svg" alt="" />
+              <img src="svg_images/share-svgrepo-com.svg" alt="" />
+            </div>
           </div>
-        </article>
+          <!-- Each individual card, we need 6 cards -->
+          <div class="card">
+            <h5 class="card-title">Easy Peasy App</h5>
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ea
+              doloribus debitis reprehenderit? Sapiente, qui quaerat enim non.
+            </p>
+            <div class="icons">
+              <img src="/icons/star-plus-outline.svg" alt="" />
+              <img src="svg_images/view-eye-interface-symbol-svgrepo-com.svg" alt="" />
+              <img src="svg_images/share-svgrepo-com.svg" alt="" />
+            </div>
+          </div>
+          <!-- Each individual card, we need 6 cards -->
+          <div class="card">
+            <h5 class="card-title">Ad Blocker</h5>
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ea
+              doloribus debitis reprehenderit? Sapiente, qui quaerat enim non.
+            </p>
+            <div class="icons">
+              <img src="/icons/star-plus-outline.svg" alt="" />
+              <img src="svg_images/view-eye-interface-symbol-svgrepo-com.svg" alt="" />
+              <img src="svg_images/share-svgrepo-com.svg" alt="" />
+            </div>
+          </div>
+          <!-- Each individual card, we need 6 cards -->
+          <div class="card">
+            <h5 class="card-title">Money Maker</h5>
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ea
+              doloribus debitis reprehenderit? Sapiente, qui quaerat enim non.
+            </p>
+            <div class="icons">
+              <img src="/icons/star-plus-outline.svg" alt="" />
+              <img src="svg_images/view-eye-interface-symbol-svgrepo-com.svg" alt="" />
+              <img src="svg_images/share-svgrepo-com.svg" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- Side content - Announcements and trending-->
+
+      <!-- Announcements -->
+      <div class="announcements">
+        <ul class="card">
+          <!-- List of individual announcments -->
+          <li class="announcement">
+            <h5 class="card-title">Site Maintenance</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+              veritatis commodi, sint dolore ex quidem mollitia dignissimos
+              omnis odio aliquam atque repudiandae quo ducimus rerum accusantium
+              voluptatem ab suscipit quis.
+            </p>
+          </li>
+          <li class="announcement">
+            <h5 class="card-title">Community Share Day</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+              veritatis commodi, sint dolore ex quidem mollitia dignissimos
+              omnis odio aliquam atque repudiandae quo ducimus rerum accusantium
+              voluptatem ab suscipit quis.
+            </p>
+          </li>
+          <li class="announcement">
+            <h5 class="card-title">Updated Privacy Policy</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+              veritatis commodi, sint dolore ex quidem mollitia dignissimos
+              omnis odio aliquam atque repudiandae quo ducimus rerum accusantium
+              voluptatem ab suscipit quis.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Trending -->
       <div class="trending">
-        <div class="head">Trending</div>
-        <article>
-          <div class="trending-user">
-            <img src="assets/profile-small.svg" alt="" />@Sameer <br />
-            some nice text
-          </div>
-          <div class="trending-user">
-            <img src="assets/profile-small.svg" alt="" />@tegan <br />
-            some nice text
-          </div>
-          <div class="trending-user">
-            <img src="assets/profile-small.svg" alt="" />@kendall <br />
-            some nice text
-          </div>
-          <div class="trending-user">
-            <img src="assets/profile-small.svg" alt="" />@alex <br />
-            some nice text
-          </div>
-        </article>
+        <h3>Trending</h3>
+        <ul class="card">
+          <!-- List those trending -->
+          <li class="trends-1">
+            <div class="gh-avatar2"></div>
+            <div class="account">
+              <p class="username">hassantimothy</p>
+              <p class="name card-text">Most creative software engineer</p>
+            </div>
+          </li>
+          <li class="trends-2">
+            <div class="gh-avatar"></div>
+            <div class="account">
+              <p class="username">Archybella</p>
+              <p class="name card-text">very hardworking</p>
+            </div>
+          </li>
+          <li class="trends-3">
+            <div class="gh-avatar3"></div>
+            <div class="account">
+              <p class="username">Asabeneh</p>
+              <p class="name card-text">Educator</p>
+            </div>
+          </li>
+          <li class="trends-4">
+            <div class="gh-avatar4"></div>
+            <div class="account">
+              <p class="username">Alex-Odhis</p>
+              <p class="name card-text">sure codes, best ever</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </main>
   </body>
 </html>
-
