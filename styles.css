@@ -376,3 +376,16 @@ img {
   width: 20px; /* Adjust the desired width */
   height: 20px; /* Adjust the desired height */
 }
+
+/* Add a border to an element */
+.my-element {
+  border: 2px solid #000; /* Initial border style and color */
+  transition: border 0.3s; /* Add a smooth transition effect to the border */
+}
+
+/* Apply a hover effect to change the border on hover */
+.my-element:hover {
+  border: 2px solid #ff0000; /* New border style and color on hover */
+}
+
+
