@@ -4,58 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Page</title>
+    <title>library</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="library-styles.css" />
+
+    </head>
   <body>
     <!-- App Drawer -->
     <div class="drawer">
       <div class="dashboard menuItem">
-        <img src="/home/beryl/The_Odin_project_admin_dashboard/svg_images/widget-3-svgrepo-com.svg" alt="" />
+        <img src="../svg_images/widget-3-svgrepo-com.svg" alt="" />
         <h1>Dashboard</h1>
       </div>
-      <div class="menuItem">
-        <img src="svg_images/home-icon-silhouette-svgrepo-com.svg" alt="" />
+      
+      <a class="menuItem" href="/home/beryl/The_Odin_Project/The_Odin_project_admin_dashboard/index.html">
+        <img src="../svg_images/home-icon-silhouette-svgrepo-com.svg" alt="" />
         <h1>Home</h1>
+      </a>
+
+      <a class="menuItem" href="/home/beryl/The_Odin_Project/The_Odin_project_admin_dashboard/library/library.html">
+          <img src="../svg_images/library-outline.svg" alt="">
+          <h1>Library</h1>
+      
+      </a>
+
+
+
+
+      <div class="menuItem">
+        <img src="../svg_images/user-heart-rounded-svgrepo-com.svg" alt="" />
+        <h1>profile</h1>
       </div>
       <div class="menuItem">
-        <img src="/home/beryl/The_Odin_project_admin_dashboard/svg_images/user-heart-rounded-svgrepo-com.svg" alt="" />
-        <h1>Profile</h1>
-      </div>
-      <div class="menuItem">
-        <img src="svg_images/communication-bubble-chat-comments-conversation-message-icon-svgrepo-com.svg" alt="" />
+        <img src="../svg_images/communication-bubble-chat-comments-conversation-message-icon-svgrepo-com.svg" alt="" />
         <h1>Messages</h1>
       </div>
       <div class="menuItem">
-        <img src="svg_images/history-2-svgrepo-com.svg" alt="" />
+        <img src="../svg_images/history-2-svgrepo-com.svg" alt="" />
         <h1>History</h1>
       </div>
       <div class="menuItem">
-        <img src="svg_images/file-arrow-up-svgrepo-com.svg" alt="" />
+        <img src="../svg_images/file-arrow-up-svgrepo-com.svg" alt="" />
         <h1>Tasks</h1>
       </div>
       <div class="menuItem">
-        <img src="svg_images/duotone-users-more-svgrepo-com.svg" alt="" />
+        <img src="../svg_images/duotone-users-more-svgrepo-com.svg" alt="" />
         <h1>Communities</h1>
       </div>
       <!-- extra spacing reuired -->
       <div class="menuItem">
-        <img src="svg_images/settings-svgrepo-com.svg" alt="" />
+        <img src="../svg_images/settings-svgrepo-com.svg" alt="" />
         <h1>Settings</h1>
       </div>
       <div class="menuItem">
-        <img src="svg_images/help-circle-svgrepo-com.svg" alt="" />
+        <img src="../svg_images/help-circle-svgrepo-com.svg" alt="" />
         <h1>Support</h1>
       </div>
       <div class="menuItem">
-        <img src="/home/beryl/The_Odin_project_admin_dashboard/svg_images/shield-svgrepo-com (1).svg" alt="" />
+        <img src="../svg_images/shield-svgrepo-com (1).svg" alt="" />
         <h1>Privacy</h1>
       </div>
     </div>
@@ -67,13 +80,13 @@
         <!-- Search icon and search bar -->
         <div class="search">
           <div class="menuItem">
-            <img src="svg_images/search-alt-svgrepo-com.svg" alt="" />
+            <img src="../svg_images/search-alt-svgrepo-com.svg" alt="" />
           </div>
           <input type="text" name="search" autocomplete="off" />
         </div>
         <div class="account">
           <div class="menuIcon">
-            <img src="/home/beryl/The_Odin_project_admin_dashboard/svg_images/widget-svgrepo-com.svg" alt="" />
+            <img src="../svg_images/widget-svgrepo-com.svg" alt="" />
           </div>
           <!-- Avatar from Github -->
           <div class="gh-avatar"></div>
@@ -104,165 +117,65 @@
     <!-- Main Content -->
     <main class="content">
       <div class="projects">
-        <h3>my Projects</h3>
+        <h3>my Books</h3>
 
-        <!-- Section for all project cards -->
-        <div class="cards">
-          <!-- Each individual card, we need 6 cards -->
-          <div class="card">
-            <h5 class="card-title">Super Cool Project</h5>
-            <p class="card-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ea
-              doloribus debitis reprehenderit? Sapiente, qui quaerat enim non.
-            </p>
-            <div class="icons">
-              <img src="/home/beryl/The_Odin_project_admin_dashboard/svg_images/unbookmark-svgrepo-com.svg" alt="" />
-              <img src="svg_images/view-eye-interface-symbol-svgrepo-com.svg" alt="" />
-              <img src="svg_images/share-svgrepo-com.svg" alt="" />
-            </div>
-          </div>
-          <!-- Each individual card, we need 6 cards -->
-          <div class="card">
-            <h5 class="card-title">Less Cool Project</h5>
-            <p class="card-text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
-              officia nesciunt harum distinctio quia nisi ipsum reiciendis
-              aspernatur, sunt nam. Doloremque aliquam ut culpa harum non rem
-              in, cumque vitae!
-            </p>
-            <div class="icons">
-              <img src="/home/beryl/The_Odin_project_admin_dashboard/svg_images/unbookmark-svgrepo-com.svg" alt="" />
-              <img src="svg_images/view-eye-interface-symbol-svgrepo-com.svg" alt="" />
-              <img src="svg_images/share-svgrepo-com.svg" alt="" />
-            </div>
-          </div>
-          <!-- Each individual card, we need 6 cards -->
-          <div class="card">
-            <h5 class="card-title">Impossible App</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
-              dicta. Pariatur libero a molestiae quod culpa deserunt quo quam
-              eos necessitatibus aliquid, nam fuga sed itaque magnam delectus ex
-              animi?
-            </p>
-            <div class="icons">
-              <img src="/home/beryl/The_Odin_project_admin_dashboard/svg_images/unbookmark-svgrepo-com.svg" alt="" />
-              <img src="svg_images/view-eye-interface-symbol-svgrepo-com.svg" alt="" />
-              <img src="svg_images/share-svgrepo-com.svg" alt="" />
-            </div>
-          </div>
-          <!-- Each individual card, we need 6 cards -->
-          <div class="card">
-            <h5 class="card-title">Easy Peasy App</h5>
-            <p class="card-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ea
-              doloribus debitis reprehenderit? Sapiente, qui quaerat enim non.
-            </p>
-            <div class="icons">
-              <img src="/home/beryl/The_Odin_project_admin_dashboard/svg_images/unbookmark-svgrepo-com.svg" alt="" />
-              <img src="svg_images/view-eye-interface-symbol-svgrepo-com.svg" alt="" />
-              <img src="svg_images/share-svgrepo-com.svg" alt="" />
-            </div>
-          </div>
-          <!-- Each individual card, we need 6 cards -->
-          <div class="card">
-            <h5 class="card-title">Ad Blocker</h5>
-            <p class="card-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ea
-              doloribus debitis reprehenderit? Sapiente, qui quaerat enim non.
-            </p>
-            <div class="icons">
-              <img src="/home/beryl/The_Odin_project_admin_dashboard/svg_images/unbookmark-svgrepo-com.svg" alt="" />
-              <img src="svg_images/view-eye-interface-symbol-svgrepo-com.svg" alt="" />
-              <img src="svg_images/share-svgrepo-com.svg" alt="" />
-            </div>
-          </div>
-          <!-- Each individual card, we need 6 cards -->
-          <div class="card">
-            <h5 class="card-title">Money Maker</h5>
-            <p class="card-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ea
-              doloribus debitis reprehenderit? Sapiente, qui quaerat enim non.
-            </p>
-            <div class="icons">
-              <img src="/home/beryl/The_Odin_project_admin_dashboard/svg_images/unbookmark-svgrepo-com.svg" alt="" />
-              <img src="svg_images/view-eye-interface-symbol-svgrepo-com.svg" alt="" />
-              <img src="svg_images/share-svgrepo-com.svg" alt="" />
-            </div>
-          </div>
+        <div class="books cards">
+          <!-- Section for all project cards -->
         </div>
       </div>
-      <!-- Side content - Announcements and trending-->
-
-      <!-- Announcements -->
-      <div class="announcements">
-        <ul class="card">
-          <!-- List of individual announcments -->
-          <li class="announcement">
-            <h5 class="card-title">Site Maintenance</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-              veritatis commodi, sint dolore ex quidem mollitia dignissimos
-              omnis odio aliquam atque repudiandae quo ducimus rerum accusantium
-              voluptatem ab suscipit quis.
-            </p>
-          </li>
-          <li class="announcement">
-            <h5 class="card-title">Community Share Day</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-              veritatis commodi, sint dolore ex quidem mollitia dignissimos
-              omnis odio aliquam atque repudiandae quo ducimus rerum accusantium
-              voluptatem ab suscipit quis.
-            </p>
-          </li>
-          <li class="announcement">
-            <h5 class="card-title">Updated Privacy Policy</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-              veritatis commodi, sint dolore ex quidem mollitia dignissimos
-              omnis odio aliquam atque repudiandae quo ducimus rerum accusantium
-              voluptatem ab suscipit quis.
-            </p>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Trending -->
-      <div class="trending">
-        <h3>Trending</h3>
-        <ul class="card">
-          <!-- List those trending -->
-          <li class="trends-1">
-            <div class="gh-avatar2"></div>
-            <div class="account">
-              <p class="username">hassantimothy</p>
-              <p class="name card-text">Most creative software engineer</p>
-            </div>
-          </li>
-          <li class="trends-2">
-            <div class="gh-avatar"></div>
-            <div class="account">
-              <p class="username">Archybella</p>
-              <p class="name card-text">very hardworking</p>
-            </div>
-          </li>
-          <li class="trends-3">
-            <div class="gh-avatar3"></div>
-            <div class="account">
-              <p class="username">Asabeneh</p>
-              <p class="name card-text">Educator</p>
-            </div>
-          </li>
-          <li class="trends-4">
-            <div class="gh-avatar4"></div>
-            <div class="account">
-              <p class="username">Alex-Odhis</p>
-              <p class="name card-text">sure codes, best ever</p>
-            </div>
-          </li>
-        </ul>
-      </div>
     </main>
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-form">
+          <h1 class="form-title"></h1>
+          <form class="add-book-form">
+            <div class="modal-input-field">
+              <label for="book-title">Title:</label>
+              <input
+                type="text"
+                name="book-title"
+                id="book-title"
+                class="modal-form-input"
+              />
+            </div>
+            <div class="modal-input-field">
+              <label for="book-author">Author:</label>
+              <input
+                type="text"
+                name="book-author"
+                id="book-author"
+                class="modal-form-input"
+              />
+            </div>
+            <div class="modal-input-field">
+              <label for="book-pages">Pages:</label>
+              <input
+                type="number"
+                min="0"
+                name="book-pages"
+                id="book-pages"
+                class="modal-form-input"
+              />
+            </div>
+            <div class="modal-input-field">
+              <span class="modal-read">Read?</span>
+              <label class="container">
+                <input
+                  type="checkbox"
+                  name="book-read"
+                  id="book-read"
+                  class="checkmark"
+                />
+              </label>
+            </div>
+            <div class="submit-modal-form">
+              <button type="submit" class="btn form-add-button"></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
+  <script src="main.js"></script>
 </html>
