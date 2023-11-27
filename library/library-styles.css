@@ -200,3 +200,13 @@
     padding-bottom: 20px;
   }
 
+/* Add your styling for :valid and :invalid pseudo-classes here */
+input:valid {
+    border: 1px solid #4CAF50; /* Green border for valid input */
+}
+
+input:invalid {
+    border: 1px solid #f44336; /* Red border for invalid input */
+}
+
+
